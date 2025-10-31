@@ -1,16 +1,116 @@
-# React + Vite
+# Companies-Directory
+To design and implement a React-based frontend application that consumes APIs and displays “Company” data with filtering features.
+Companies Directory
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Hosting in Netlify
+URL: https://gjk-companies-directory.netlify.app/
 
-Currently, two official plugins are available:
+A responsive and interactive Companies Directory built with React.
+It allows users to search, filter, sort, and paginate through a list of companies fetched from a JSON file (/companies.json).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
 
-## React Compiler
+🔍 Search by company name, description, or industry (with debounced input)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📍 Filter by location and industry
 
-## Expanding the ESLint configuration
+↕️ Sort by name or number of employees
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📄 Pagination with dynamic page count
+
+⚡ Debounced search for better performance
+
+🧠 Built using React hooks (useState, useEffect, useMemo)
+
+🎨 Clean and modern Tailwind CSS styling
+
+🧩 Tech Stack
+
+React 18+
+
+Tailwind CSS
+
+Vite / Create React App (any bundler works)
+
+JSON data from /companies.json
+
+📂 Project Structure
+src/
+ ├── components/
+ │    └── CompaniesDirectory.jsx   # Main directory component
+ ├── data/
+ │    └── companies.json           # Static company data (sample dataset)
+ ├── App.jsx
+ ├── main.jsx
+ └── index.css
+
+# Installation & Setup
+
+Clone the repository
+
+git clone https://github.com/GULLAPALLI-JYOTHI-KIRAN/Companies-Directory.git
+cd companies-directory
+
+
+# Install dependencies
+
+npm install
+
+# Run the development server
+
+npm run dev
+
+
+# Build for production
+
+npm run build
+
+# Example companies.json
+
+Here’s a sample of the expected data format:
+[
+{
+"id": 1,
+    "name": "TechNova Solutions",
+    "location": "Bangalore",
+    "industry": "Software",
+    "employees": 320,
+    "website": "https://technova.com",
+    "description": "Leading provider of enterprise software solutions."
+  },
+{
+    "id": 2,
+    "name": "GreenFields Agro",
+    "location": "Hyderabad",
+    "industry": "Agriculture",
+    "employees": 150,
+    "website": "https://greenfieldsagro.com",
+    "description": "Innovative sustainable farming solutions."
+}
+]
+
+# Key React Concepts Used
+
+useState() → manages component state
+
+useEffect() → fetches and debounces data
+
+useMemo() → optimizes derived lists and filtering
+
+Debouncing → delays search input for smoother UX
+
+Pagination logic → slices filtered data for current page
+
+# UI Preview
+Feature	Description
+🧠 Search	Type keywords to find matching companies
+🌍 Filters	Choose by location or industry
+⚙️ Sorting	Sort by name or employees
+📑 Pagination	Navigate through multiple pages of results
+🤝 Contributing
+
+Contributions, feedback, and suggestions are always welcome!
+Feel free to fork this repo, make changes, and open a pull request.
+
+# License
+This project is licensed under the MIT License – feel free to use and modify.
