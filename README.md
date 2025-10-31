@@ -1,29 +1,26 @@
-# Companies-Directory
-To design and implement a React-based frontend application that consumes APIs and displays “Company” data with filtering features.
-Companies Directory
+# Companies-Directory_For Frontend Development
 
-# Hosting in Netlify
-URL: https://gjk-companies-directory.netlify.app/
+A responsive web application built using **React** that displays company details with powerful search, filter, and sort options.  
+You can easily explore companies by name, location, or industry — all in a clean, modern interface.
+
+## 🚀 Live Demo
+
+Click here to view the project on Netlify : https://lovely-salmiakki-b4e6a6.netlify.app/
 
 A responsive and interactive Companies Directory built with React.
 It allows users to search, filter, sort, and paginate through a list of companies fetched from a JSON file (/companies.json).
 
-# Features
+## 🌟 Features
 
-🔍 Search by company name, description, or industry (with debounced input)
+- 🔍 **Search** companies by name, description, or industry  
+- 📍 **Filter** results based on location or industry  
+- ↕️ **Sort** companies by name or number of employees  
+- 📄 **Pagination** to browse large company lists easily  
+- ⚡ **Fast and smooth performance** with optimized search  
+- 🧠 Built using **React Hooks** like `useState`, `useEffect`, and `useMemo`  
+- 🎨 Styled with **Tailwind CSS** for a modern look and responsive design  
 
-📍 Filter by location and industry
-
-↕️ Sort by name or number of employees
-
-📄 Pagination with dynamic page count
-
-⚡ Debounced search for better performance
-
-🧠 Built using React hooks (useState, useEffect, useMemo)
-
-🎨 Clean and modern Tailwind CSS styling
-
+---
 🧩 Tech Stack
 
 React 18+
@@ -43,14 +40,6 @@ src/
  ├── App.jsx
  ├── main.jsx
  └── index.css
-
-# Installation & Setup
-
-Clone the repository
-
-git clone https://github.com/GULLAPALLI-JYOTHI-KIRAN/Companies-Directory.git
-cd companies-directory
-
 
 # Install dependencies
 
